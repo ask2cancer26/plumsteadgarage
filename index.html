@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- NOINDEX: Remove the line below once the client has agreed and the site goes live -->
+<meta name="robots" content="noindex, nofollow">
+<title>Plumstead Garages Ltd | MOT · Servicing · Repairs | SE18</title>
+<meta name="description" content="Plumstead Garages Ltd — AA & RAC approved garage in Plumstead SE18. MOT Class 4, 5 & 7, full servicing, bodywork and repairs. No booking needed for MOTs. Call 020 8855 4802.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black:    #111111;
+  --charcoal: #1e1e1e;
+  --mid-grey: #555555;
+  --border:   #e2e2e2;
+  --bg:       #f6f6f4;
+  --white:    #ffffff;
+  --blue:     #1a3d6e;
+  --blue-lt:  #eef2f8;
+  --blue-mid: #2651a0;
+  --red:      #c0392b;
+  --silver:   #999999;
+  --gold:     #b8860b;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--white);
+  color: var(--charcoal);
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2.5rem;
+  height: 64px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800; font-size: 1.45rem;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--black); text-decoration: none;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.nav-logo-accent { color: var(--blue-mid); }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a {
+  font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--mid-grey); text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--black); }
+.nav-cta {
+  background: var(--blue) !important; color: white !important;
+  padding: 0.5rem 1.1rem; border-radius: 2px;
+}
+.nav-cta:hover { background: var(--blue-mid) !important; }
+
+/* TRUST BAR */
+.trust-bar {
+  background: var(--blue);
+  padding: 0.55rem 2.5rem;
+  margin-top: 64px;
+  display: flex; align-items: center; justify-content: center;
+  gap: 2.5rem; flex-wrap: wrap;
+}
+.trust-item {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: rgba(255,255,255,0.85);
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.trust-item::before { content: '✓'; color: #7ec8e3; font-size: 0.8rem; }
+
+/* HERO */
+.hero-wrap { background: var(--white); border-bottom: 1px solid var(--border); }
+.hero {
+  max-width: 1200px; margin: 0 auto;
+  padding: 70px 2.5rem 80px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 60px; align-items: center;
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--blue-mid);
+  margin-bottom: 1.25rem;
+}
+.hero-tag-line { width: 24px; height: 2px; background: var(--blue-mid); }
+
+h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: clamp(3rem, 6.5vw, 5rem);
+  line-height: 0.94; letter-spacing: 0.01em;
+  text-transform: uppercase; color: var(--black);
+  margin-bottom: 1.4rem;
+}
+h1 .accent { color: var(--blue-mid); }
+
+.hero-body {
+  font-size: 1.05rem; font-weight: 300; color: var(--mid-grey);
+  max-width: 460px; margin-bottom: 2rem; line-height: 1.75;
+}
+
+.hero-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--blue); color: white;
+  padding: 0.9rem 2rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none;
+  border-radius: 2px; transition: background 0.2s, transform 0.15s;
+}
+.btn-primary:hover { background: var(--blue-mid); transform: translateY(-1px); }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  border: 1.5px solid var(--border); color: var(--mid-grey);
+  padding: 0.9rem 2rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none;
+  border-radius: 2px; transition: border-color 0.2s, color 0.2s;
+}
+.btn-outline:hover { border-color: var(--black); color: var(--black); }
+
+.mot-callout {
+  display: inline-flex; align-items: center; gap: 0.75rem;
+  background: #fff8e1; border: 1px solid #ffe082;
+  padding: 0.75rem 1.25rem; border-radius: 2px;
+  font-size: 0.82rem; font-weight: 500; color: #5d4037;
+}
+.mot-callout strong { font-weight: 700; }
+
+/* Hero right card */
+.hero-card {
+  background: var(--black); border-radius: 4px;
+  overflow: hidden;
+}
+.hero-card-header {
+  background: var(--blue); padding: 1.25rem 1.75rem;
+}
+.hero-card-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800; font-size: 1.6rem;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  color: white; line-height: 1;
+}
+.hero-card-sub {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,255,255,0.75);
+  margin-top: 0.3rem;
+}
+.hero-card-body { padding: 1.75rem; }
+.card-stat-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.card-stat-row:last-child { border-bottom: none; }
+.card-stat-label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--silver); }
+.card-stat-val {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 1rem; color: white; text-align: right;
+}
+.card-stat-val .hi { color: #7ec8e3; }
+.hero-card-footer {
+  padding: 1.25rem 1.75rem; border-top: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+}
+.accred-row {
+  display: flex; gap: 0.6rem; flex-wrap: wrap;
+}
+.accred-badge {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.8);
+  padding: 0.3rem 0.7rem; border-radius: 2px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* TICKER */
+.ticker {
+  background: var(--black); padding: 0.75rem 0;
+  overflow: hidden; white-space: nowrap;
+}
+.ticker-inner { display: inline-block; animation: ticker 32s linear infinite; }
+.ticker-inner span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,255,255,0.6);
+  padding: 0 2rem;
+}
+.ticker-inner span::before { content: '▪'; color: #7ec8e3; margin-right: 2rem; font-size: 0.5rem; vertical-align: middle; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* SECTIONS */
+section { padding: 90px 2.5rem; }
+.section-inner { max-width: 1160px; margin: 0 auto; }
+.section-tag {
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--blue-mid); margin-bottom: 0.5rem;
+}
+h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800; font-size: clamp(2rem, 4.5vw, 3rem);
+  letter-spacing: 0.02em; text-transform: uppercase; line-height: 1;
+  color: var(--black); margin-bottom: 0.75rem;
+}
+.section-intro {
+  font-size: 1rem; font-weight: 300; color: var(--mid-grey);
+  max-width: 500px; margin-bottom: 3.5rem; line-height: 1.75;
+}
+
+/* SERVICES */
+#services { background: var(--bg); }
+.services-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background: var(--border);
+  border: 1px solid var(--border); border-radius: 3px; overflow: hidden;
+}
+.service-card {
+  background: var(--white); padding: 2rem 1.75rem;
+  transition: background 0.2s; position: relative;
+}
+.service-card:hover { background: var(--bg); }
+.service-card::after {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: var(--blue); transform: scaleX(0); transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.service-card:hover::after { transform: scaleX(1); }
+.service-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 0.7rem; letter-spacing: 0.18em;
+  color: var(--silver); margin-bottom: 1rem;
+}
+.service-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 1.2rem; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--black); margin-bottom: 0.5rem;
+}
+.service-desc { font-size: 0.85rem; font-weight: 300; color: var(--mid-grey); line-height: 1.65; }
+
+/* MOT HIGHLIGHT */
+.mot-highlight {
+  background: var(--blue); border-radius: 4px;
+  padding: 3rem 2.5rem; margin-top: 2.5rem;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;
+}
+.mot-hl-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800; font-size: 2rem; text-transform: uppercase;
+  color: white; line-height: 1; margin-bottom: 0.75rem;
+}
+.mot-hl-body { font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.8); line-height: 1.7; }
+.mot-hl-points { display: flex; flex-direction: column; gap: 0.85rem; }
+.mot-point {
+  display: flex; align-items: flex-start; gap: 0.75rem;
+  font-size: 0.9rem; color: rgba(255,255,255,0.9);
+}
+.mot-point-icon {
+  width: 22px; height: 22px; background: rgba(255,255,255,0.15);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 0.65rem; color: white; flex-shrink: 0; margin-top: 1px;
+}
+
+/* ABOUT */
+#about { background: var(--white); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.about-body { font-size: 1rem; font-weight: 300; color: var(--mid-grey); line-height: 1.8; margin-bottom: 1.25rem; }
+.accreditations {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 2rem;
+}
+.accred-card {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 3px; padding: 0.9rem 1rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.accred-icon {
+  width: 32px; height: 32px; background: var(--blue);
+  border-radius: 2px; display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; font-weight: 800; color: white; flex-shrink: 0;
+  font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.05em;
+}
+.accred-name { font-size: 0.82rem; font-weight: 500; color: var(--black); }
+.accred-sub { font-size: 0.72rem; color: var(--mid-grey); margin-top: 0.1rem; }
+
+.about-panel {
+  background: var(--black); border-radius: 4px; overflow: hidden;
+}
+.about-panel-header {
+  background: var(--blue); padding: 1.25rem 1.75rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 0.85rem; letter-spacing: 0.15em;
+  text-transform: uppercase; color: white;
+}
+.about-panel-body { padding: 1.75rem; }
+.panel-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.85rem 0; border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.panel-row:last-child { border-bottom: none; }
+.panel-label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--silver); }
+.panel-val { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 1rem; color: white; text-align: right; max-width: 60%; }
+.panel-val a { color: white; text-decoration: none; }
+
+/* REVIEWS */
+#reviews { background: var(--bg); }
+.reviews-top {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  margin-bottom: 3rem; flex-wrap: wrap; gap: 1.5rem;
+}
+.google-score {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 4px; padding: 1rem 1.5rem;
+  display: flex; align-items: center; gap: 1rem;
+}
+.g-circle {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: #4285f4; display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; font-weight: 700; color: white; font-family: Arial, sans-serif; flex-shrink: 0;
+}
+.g-rating { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.6rem; color: var(--black); line-height: 1; }
+.g-stars { color: #f4b400; font-size: 0.75rem; }
+.g-count { font-size: 0.72rem; color: var(--mid-grey); margin-top: 0.1rem; }
+
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.review-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 4px; padding: 1.75rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.review-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); transform: translateY(-2px); }
+.r-stars { color: #f4b400; font-size: 0.8rem; margin-bottom: 1rem; }
+.r-text { font-size: 0.92rem; font-weight: 300; color: var(--charcoal); line-height: 1.75; margin-bottom: 1.25rem; font-style: italic; }
+.r-author { display: flex; align-items: center; gap: 0.75rem; }
+.r-avatar {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--blue); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; font-weight: 600; flex-shrink: 0;
+}
+.r-name { font-size: 0.85rem; font-weight: 500; color: var(--black); }
+.r-loc { font-size: 0.72rem; color: var(--silver); margin-top: 0.1rem; }
+
+/* CONTACT */
+#contact { background: var(--white); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.contact-items { display: flex; flex-direction: column; gap: 2rem; }
+.c-item { display: flex; gap: 1.25rem; }
+.c-icon {
+  width: 42px; height: 42px; flex-shrink: 0;
+  background: var(--blue); border-radius: 2px;
+  display: flex; align-items: center; justify-content: center; font-size: 1rem;
+}
+.c-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--silver); margin-bottom: 0.3rem; }
+.c-val { font-size: 0.95rem; color: var(--charcoal); }
+.c-val a { color: var(--charcoal); text-decoration: none; font-weight: 500; }
+.c-val a:hover { color: var(--blue-mid); }
+.hours-table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+.hours-table td { font-size: 0.85rem; padding: 0.4rem 0; border-bottom: 1px solid var(--border); }
+.hours-table td:last-child { text-align: right; font-weight: 500; }
+.hours-table tr:last-child td { border-bottom: none; }
+.closed-day { color: var(--silver); }
+.map-wrap { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; height: 300px; background: var(--bg); }
+.map-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
+
+/* CTA BAND */
+.cta-band { background: var(--blue); padding: 60px 2.5rem; text-align: center; }
+.cta-band h2 { color: white; margin-bottom: 0.5rem; }
+.cta-band p { font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.8); margin-bottom: 2rem; }
+.btn-white {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: white; color: var(--blue);
+  padding: 1rem 2.5rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; text-decoration: none;
+  border-radius: 2px; transition: opacity 0.2s, transform 0.15s;
+}
+.btn-white:hover { opacity: 0.92; transform: translateY(-1px); }
+
+/* FOOTER */
+footer {
+  background: var(--charcoal); padding: 2.5rem 2.5rem;
+  border-top: 3px solid var(--blue);
+}
+.footer-inner {
+  max-width: 1160px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;
+}
+.footer-logo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800; font-size: 1.3rem; letter-spacing: 0.05em; text-transform: uppercase; color: white;
+}
+.footer-logo .accent { color: #7ec8e3; }
+.footer-meta { font-size: 0.75rem; color: var(--silver); margin-top: 0.2rem; }
+.footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.footer-links a { font-size: 0.75rem; color: var(--silver); text-decoration: none; letter-spacing: 0.06em; }
+.footer-links a:hover { color: white; }
+
+/* SPURWISE BAR */
+.spurwise-bar {
+  background: var(--black);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 0.75rem 2.5rem;
+  display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.spurwise-bar-text {
+  font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(255,255,255,0.28);
+}
+.spurwise-bar a {
+  font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: rgba(255,255,255,0.5);
+  text-decoration: none; transition: color 0.2s;
+}
+.spurwise-bar a:hover { color: white; }
+.spurwise-dot { color: rgba(255,255,255,0.15); font-size: 0.5rem; vertical-align: middle; }
+.sticky-phone {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 200;
+  background: var(--blue); color: white;
+  padding: 0.85rem 1.4rem; border-radius: 2px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem; font-weight: 700; letter-spacing: 0.06em;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(26,61,110,0.35);
+  transition: background 0.2s, transform 0.15s;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.sticky-phone:hover { background: var(--blue-mid); transform: translateY(-2px); }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; padding: 50px 1.5rem 60px; }
+  .hero-card { display: none; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .mot-highlight { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  section { padding: 70px 1.5rem; }
+  nav { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .trust-bar { padding: 0.55rem 1.5rem; gap: 1.25rem; }
+}
+@media (max-width: 480px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .accreditations { grid-template-columns: 1fr; }
+}
+
+/* HERO PHOTO BACKGROUND */
+.hero-wrap { position: relative; overflow: hidden; }
+.hero-wrap::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url('https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1400&auto=format&fit=crop&q=60') center/cover no-repeat;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+/* PHOTO STRIP */
+.photo-strip {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 3px; height: 240px; margin-top: 2.5rem;
+  border-radius: 4px; overflow: hidden;
+  border: 1px solid var(--border);
+}
+.photo-strip-item { overflow: hidden; position: relative; }
+.photo-strip-item img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.4s ease; filter: saturate(0.8) contrast(1.05);
+}
+.photo-strip-item:hover img { transform: scale(1.05); }
+.photo-strip-cap {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%);
+  padding: 0.6rem 0.9rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(255,255,255,0.9);
+}
+
+/* ABOUT IMAGE */
+.about-img-wrap {
+  border-radius: 4px; overflow: hidden; height: 400px; position: relative;
+}
+.about-img-wrap img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: saturate(0.75) contrast(1.08);
+}
+.about-img-badge {
+  position: absolute; bottom: 1.5rem; left: 1.5rem;
+  background: var(--blue); color: white;
+  padding: 0.7rem 1.2rem; border-radius: 2px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .photo-strip { height: 160px; }
+  .about-img-wrap { height: 240px; }
+}
+@media (max-width: 560px) {
+  .photo-strip-item:nth-child(2), .photo-strip-item:nth-child(3) { display: none; }
+  .photo-strip { grid-template-columns: 1fr; height: 180px; }
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-tag   { animation: fadeUp 0.5s ease 0.1s both; }
+h1          { animation: fadeUp 0.5s ease 0.2s both; }
+.hero-body  { animation: fadeUp 0.5s ease 0.3s both; }
+.hero-btns  { animation: fadeUp 0.5s ease 0.4s both; }
+.mot-callout { animation: fadeUp 0.5s ease 0.5s both; }
+.hero-card  { animation: fadeUp 0.5s ease 0.35s both; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Plumstead <span class="nav-logo-accent">Garages</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Find Us</a></li>
+    <li><a href="tel:02088554802" class="nav-cta">020 8855 4802</a></li>
+  </ul>
+</nav>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">AA Approved</div>
+  <div class="trust-item">RAC Approved</div>
+  <div class="trust-item">RMI Member</div>
+  <div class="trust-item">City &amp; Guilds Trained</div>
+  <div class="trust-item">IMI Certified</div>
+  <div class="trust-item">MOT Class 4, 5 &amp; 7</div>
+</div>
+
+<!-- HERO -->
+<div class="hero-wrap">
+  <div class="hero">
+    <div>
+      <div class="hero-tag"><div class="hero-tag-line"></div>Plumstead, SE18 &nbsp;·&nbsp; Est. 1986</div>
+      <h1>SE18's<br><span class="accent">Approved</span><br>Garage.</h1>
+      <p class="hero-body">AA and RAC approved. MOT Class 4, 5 and 7 — no booking required. Full servicing, bodywork and repairs for all makes and models, including light commercials.</p>
+      <div class="hero-btns">
+        <a href="tel:02088554802" class="btn-primary">📞 &nbsp;020 8855 4802</a>
+        <a href="#services" class="btn-outline">Our Services →</a>
+      </div>
+      <div class="mot-callout">
+        <span>🔑</span>
+        <span><strong>No booking needed</strong> for MOT testing — walk in Monday to Saturday</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-header">
+        <div class="hero-card-title">Plumstead<br>Garages Ltd</div>
+        <div class="hero-card-sub">Old Tram Yard · Lakedale Rd · SE18</div>
+      </div>
+      <div class="hero-card-body">
+        <div class="card-stat-row">
+          <span class="card-stat-label">Google rating</span>
+          <span class="card-stat-val"><span class="hi">4.2</span> ★</span>
+        </div>
+        <div class="card-stat-row">
+          <span class="card-stat-label">Customer reviews</span>
+          <span class="card-stat-val">12<span class="hi"> reviews</span></span>
+        </div>
+        <div class="card-stat-row">
+          <span class="card-stat-label">Experience</span>
+          <span class="card-stat-val">Est. <span class="hi">1986</span></span>
+        </div>
+        <div class="card-stat-row">
+          <span class="card-stat-label">MOT classes</span>
+          <span class="card-stat-val">4 · 5 · <span class="hi">7</span></span>
+        </div>
+        <div class="card-stat-row">
+          <span class="card-stat-label">Phone</span>
+          <span class="card-stat-val"><a href="tel:02088554802" style="color:white;">020 8855 4802</a></span>
+        </div>
+      </div>
+      <div class="hero-card-footer">
+        <div style="font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--silver); margin-bottom:0.6rem;">Accreditations</div>
+        <div class="accred-row">
+          <span class="accred-badge">AA</span>
+          <span class="accred-badge">RAC</span>
+          <span class="accred-badge">RMI</span>
+          <span class="accred-badge">City &amp; Guilds</span>
+          <span class="accred-badge">IMI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span>MOT Testing</span><span>No Booking Required</span><span>Free Retests</span><span>Full Servicing</span><span>Bodywork Repairs</span><span>Engine Diagnostics</span><span>Brakes &amp; Exhausts</span><span>Tyres</span><span>Clutches</span><span>All Makes &amp; Models</span><span>Light Commercials</span><span>Minibuses</span>
+    <span>MOT Testing</span><span>No Booking Required</span><span>Free Retests</span><span>Full Servicing</span><span>Bodywork Repairs</span><span>Engine Diagnostics</span><span>Brakes &amp; Exhausts</span><span>Tyres</span><span>Clutches</span><span>All Makes &amp; Models</span><span>Light Commercials</span><span>Minibuses</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <p class="section-tag">What we do</p>
+    <h2>Complete Car Care</h2>
+    <p class="section-intro">From walk-in MOTs to full mechanical rebuilds — everything under one roof, with 20 years of experience behind every job.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div class="service-name">MOT Testing</div>
+        <div class="service-desc">Class 4, 5 and 7 — cars, vans, minibuses and light commercials. No booking needed. Free retests included.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div class="service-name">Car Servicing</div>
+        <div class="service-desc">Interim, full and major service schedules. Oil, filters, brakes, belts and more. All makes and models.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div class="service-name">Bodywork Repairs</div>
+        <div class="service-desc">Body fixes, panel replacements and resprays. Insurance work accepted. Smart repairs for minor dents and scratches.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <div class="service-name">Engine Diagnostics</div>
+        <div class="service-desc">Modern diagnostic equipment for engine management, ABS, airbags and electrical systems. Fault found — fault fixed.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <div class="service-name">Brakes &amp; Exhausts</div>
+        <div class="service-desc">Pads, discs, callipers, full exhaust systems and sections. Safety-critical work done right, same day where possible.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <div class="service-name">Tyres &amp; Wheels</div>
+        <div class="service-desc">All major tyre brands supplied and fitted. Puncture repairs, balancing and alignment. Competitive prices.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">07</div>
+        <div class="service-name">Mechanical Repairs</div>
+        <div class="service-desc">Clutches, suspensions, steering, cooling systems and more. We handle it all — no job too complex.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">08</div>
+        <div class="service-name">Car Upgrades</div>
+        <div class="service-desc">Performance improvements, accessory fitting and custom modifications. Ask us what's possible for your vehicle.</div>
+      </div>
+    </div>
+
+    <!-- PHOTO STRIP -->
+    <div class="photo-strip">
+      <div class="photo-strip-item">
+        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&auto=format&fit=crop&q=70" alt="Mechanic working under car on ramp">
+        <div class="photo-strip-cap">MOT &amp; Servicing</div>
+      </div>
+      <div class="photo-strip-item">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=70" alt="Engine diagnostics">
+        <div class="photo-strip-cap">Engine Diagnostics</div>
+      </div>
+      <div class="photo-strip-item">
+        <img src="https://images.unsplash.com/photo-1599256872237-5dcc0fbe9668?w=600&auto=format&fit=crop&q=70" alt="Tyre fitting and wheels">
+        <div class="photo-strip-cap">Tyres &amp; Wheels</div>
+      </div>
+    </div>
+
+    <div class="mot-highlight">
+      <div>
+        <div class="mot-hl-title">MOT Testing —<br>No Booking Needed</div>
+        <p class="mot-hl-body">Walk in Monday to Saturday. We cover Class 4, 5 and 7 vehicles — from hatchbacks to minibuses and light commercials. Free retest included if any work is needed.</p>
+      </div>
+      <div class="mot-hl-points">
+        <div class="mot-point"><div class="mot-point-icon">✓</div><span>Class 4 — cars and light vans</span></div>
+        <div class="mot-point"><div class="mot-point-icon">✓</div><span>Class 5 — minibuses (9–12 seats)</span></div>
+        <div class="mot-point"><div class="mot-point-icon">✓</div><span>Class 7 — light goods vehicles</span></div>
+        <div class="mot-point"><div class="mot-point-icon">✓</div><span>Free retest — no extra charge</span></div>
+        <div class="mot-point"><div class="mot-point-icon">✓</div><span>Open Saturday — no appointment</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800&auto=format&fit=crop&q=70" alt="Plumstead Garages workshop">
+        <div class="about-img-badge">Est. 1986 · Plumstead SE18</div>
+      </div>
+      <div>
+        <p class="section-tag">Our story</p>
+        <h2>Est. 1986 — Serving SE London</h2>
+        <p class="about-body">Plumstead Garages has been looking after the vehicles of Plumstead, Charlton, Abbey Wood, Woolwich and beyond since 1986. Nearly 40 years of loyal clients — private owners, fleet operators and commercial lease companies — built by doing the job properly every time.</p>
+        <p class="about-body">We're not just any garage. We're AA approved, RAC approved, RMI members, and City & Guilds and IMI certified. Those accreditations mean something — they're independently verified standards that protect you.</p>
+        <div class="accreditations">
+          <div class="accred-card">
+            <div class="accred-icon">AA</div>
+            <div><div class="accred-name">AA Approved</div><div class="accred-sub">Independently verified</div></div>
+          </div>
+          <div class="accred-card">
+            <div class="accred-icon">RAC</div>
+            <div><div class="accred-name">RAC Approved</div><div class="accred-sub">Independently verified</div></div>
+          </div>
+          <div class="accred-card">
+            <div class="accred-icon">RMI</div>
+            <div><div class="accred-name">RMI Member</div><div class="accred-sub">Retail Motor Industry</div></div>
+          </div>
+          <div class="accred-card">
+            <div class="accred-icon">IMI</div>
+            <div><div class="accred-name">IMI Certified</div><div class="accred-sub">City &amp; Guilds trained</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="about-panel">
+        <div class="about-panel-header">Quick Info</div>
+        <div class="about-panel-body">
+          <div class="panel-row">
+            <span class="panel-label">Address</span>
+            <span class="panel-val">Unit 1, 2 &amp; 19 Old Tram Yard<br>Lakedale Rd, SE18 1PW</span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-label">Phone</span>
+            <span class="panel-val"><a href="tel:02088554802">020 8855 4802</a></span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-label">Mon – Fri</span>
+            <span class="panel-val">8:30 am – 6:30 pm</span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-label">Saturday</span>
+            <span class="panel-val">8:30 am – 5:30 pm</span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-label">Sunday</span>
+            <span class="panel-val" style="color:var(--silver);">Closed</span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-label">MOT classes</span>
+            <span class="panel-val">Class 4, 5 &amp; 7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="section-inner">
+    <div class="reviews-top">
+      <div>
+        <p class="section-tag">What customers say</p>
+        <h2>Trusted by SE London Drivers</h2>
+      </div>
+      <div class="google-score">
+        <div class="g-circle">G</div>
+        <div>
+          <div class="g-rating">4.2</div>
+          <div class="g-stars">★★★★☆</div>
+          <div class="g-count">12 verified reviews</div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Great garage, super quick. Took my car for an MOT at 3pm Saturday without a booking — even though they were fully booked and had about 4 people waiting, they got it done within an hour. Very knowledgeable lads, definitely one of the best in the area."</p>
+        <div class="r-author">
+          <div class="r-avatar">AS</div>
+          <div><div class="r-name">Asabi S.</div><div class="r-loc">Plumstead · Google Review</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Come here year in year out. Always professional, swift and efficient service. Fair prices. Fully recommend."</p>
+        <div class="r-author">
+          <div class="r-avatar">RO</div>
+          <div><div class="r-name">Ronald O.</div><div class="r-loc">SE18 · Google Review</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"I've been taking my car here for services, repairs and MOTs for the best part of 20 years. Tyre puncture fixed and brake pads replaced on separate occasions — very smooth and at a reasonable price. Highly recommended."</p>
+        <div class="r-author">
+          <div class="r-avatar">JM</div>
+          <div><div class="r-name">Jamie M.</div><div class="r-loc">Woolwich · Google Review</div></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:2.5rem; text-align:center;">
+      <a href="https://search.google.com/local/reviews?placeid=ChIJ0ecVn82o2EcR2ZbfinFAHtE" target="_blank" rel="noopener" class="btn-outline">Read all reviews on Google →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-tag">Find us</p>
+    <h2>Come and See Us</h2>
+    <p class="section-intro">Old Tram Yard, off Lakedale Road in Plumstead. Easy to find, on-site parking. Walk-ins welcome for MOTs.</p>
+    <div class="contact-grid">
+      <div class="contact-items">
+        <div class="c-item">
+          <div class="c-icon">📞</div>
+          <div>
+            <div class="c-label">Phone</div>
+            <div class="c-val"><a href="tel:02088554802">020 8855 4802</a></div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">📍</div>
+          <div>
+            <div class="c-label">Address</div>
+            <div class="c-val">Unit 1, 2 &amp; 19 Old Tram Yard<br>Lakedale Road, Plumstead<br>London SE18 1PW</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">🕐</div>
+          <div>
+            <div class="c-label">Opening Hours</div>
+            <div class="c-val">
+              <table class="hours-table">
+                <tr><td>Monday – Friday</td><td>8:30 am – 6:30 pm</td></tr>
+                <tr><td>Saturday</td><td>8:30 am – 5:30 pm</td></tr>
+                <tr><td class="closed-day">Sunday</td><td class="closed-day">Closed</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.9!2d0.0905!3d51.4874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a8cd9f15e7d1%3A0xd11e40718adf96d9!2sPlumstead+Garages+Ltd!5e0!3m2!1sen!2suk!4v1"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Plumstead Garages location map">
+          </iframe>
+        </div>
+        <div style="margin-top:1rem;">
+          <a href="tel:02088554802" class="btn-primary" style="width:100%; justify-content:center;">📞 &nbsp;Call Now — 020 8855 4802</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2>Need an MOT or Service?</h2>
+  <p>No booking needed for MOTs. Just turn up — Monday to Saturday.</p>
+  <a href="tel:02088554802" class="btn-white">📞 &nbsp;020 8855 4802</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Plumstead <span class="accent">Garages</span> Ltd</div>
+      <div class="footer-meta">Unit 1, 2 &amp; 19 Old Tram Yard, Lakedale Rd, Plumstead SE18 1PW · 020 8855 4802</div>
+      <div class="footer-meta" style="margin-top:0.2rem;">AA Approved · RAC Approved · RMI Member · IMI Certified · MOT Class 4, 5 &amp; 7</div>
+    </div>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Find Us</a>
+      <a href="tel:02088554802">Call Us</a>
+    </div>
+  </div>
+</footer>
+
+<!-- SPURWISE BAR -->
+<div class="spurwise-bar">
+  <span class="spurwise-bar-text">Website designed &amp; built by</span>
+  <a href="https://spurwise.co.uk" target="_blank" rel="noopener">Spurwise</a>
+  <span class="spurwise-dot">▪</span>
+  <span class="spurwise-bar-text">AI &amp; Web for SE London businesses</span>
+  <span class="spurwise-dot">▪</span>
+  <a href="https://spurwise.co.uk" target="_blank" rel="noopener">spurwise.co.uk</a>
+</div>
+
+<a href="tel:02088554802" class="sticky-phone">📞 020 8855 4802</a>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.service-card, .review-card, .c-item, .accred-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(16px)';
+  el.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
+  obs.observe(el);
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const t = document.querySelector(this.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+</script>
+</body>
+</html>
